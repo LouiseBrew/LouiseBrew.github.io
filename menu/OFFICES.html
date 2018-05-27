@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Undeviating 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140322
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+        	<span class=""><img src="images/carabao.png" alt="logo_top" style="width:500px; height:300px;"></span>
+			<h1><a href="#">Information Kiosk For Urdaneta City Municipal</a></h1>
+		</div>
+		<div id="menu">
+			<li><a href="index.html" accesskey="1" title=""><img src="images/home-icon.png" alt="home" style="width:50px; height:50px;"></a></li>
+
+				<li><a href="OFFICES.html" accesskey="2" title=""><img src="images/office-icons.png" alt="office" style="width:50px; height:50px;"></a></li>
+
+				<li><a href="ACTIVITIES.html" accesskey="3" title=""><img src="images/activity-icons.png" alt="activity" style="width:50px; height:50px;"></a></li>
+
+				<li><a href="EMPLOYEE.html" accesskey="4" title=""><img src="images/employee-icon.png" alt="employee" style="width:50px; height:50px;"></a></li>
+				
+				<li><a href="CONTACT.html" accesskey="5" title=""><img src="images/contact-icon.jpg" alt="contact" style="width:50px; height:50px;"></a></li>
+
+				<li><a href="LOCATION.html" accesskey="6" title=""><img src="images/location-icon.png" alt="location" style="width:50px; height:50px;"></a></li>
+
+				<li><a href="../home.html" accesskey="7" title=""><img src="images/about-icon.png" alt="about" style="width:50px; height:50px;"></a></li>
+				
+			</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div id="banner" class="container"><img src="" width="1200" height="500" alt="" /></div>
+	<div id="welcome" class="container-fluid">
+    	
+<div class="title">
+	  <h2>OFFICES</h2>
+		</div>
+		Search Office<input type="text" name="search_office">
+           <br>
+          <input type="submit" name="submit" value="Search">
+<?php   
+ if(isset($_POST['submit']))  
+ {  
+
+
+      $connect = mysqli_connect("localhost", "root", "", "information_kiosk"); 
+$search_office = $_POST['search_office'];
+
+
+
+if(!empty($search_office))
+{
+   $output = '';  
+      $query = "SELECT * FROM `_tbl_offices` WHERE office_name LIKE ;  
+      $result = mysqli_query($connect, $query);  
+      ?>  
+           <table class="table table-bordered">  
+                <tr>  
+                     <th width="5%">ID</th>  
+                     <th width="30%">Name</th>  
+                     <th width="43%">Catagory</th>  
+                    <th width="10%">Details of crime</th>  
+                    <th width="12%">Date submitted</th>  
+                </tr>  
+      <?php
+      if(mysqli_num_rows($result) > 0)  
+      {  
+           while($row = mysqli_fetch_array($result))  
+           {  
+                  ?>
+                     <tr>  
+                          <td><?php echo $row["id"]; ?></td>  
+                          <td><?php echo $row["fname"]; ?></td>  
+                         <td><?php echo $row["type_of_report"]; ?></td>  
+                         <td><?php echo $row["details_of_crime"]; ?></td>  
+                         <td><?php echo $row["report_date"]; ?></td>  
+                     </tr>  
+                <?php
+           }  
+      }  
+      else  
+      {  
+            ?>
+                <tr>  
+                     <td colspan="5">No Order Found</td>  
+                </tr>  
+           <?php
+      }
+      }
+  }
+
+      
+
+?>
+	</div>
+</div>
+</body>
+</html>
+

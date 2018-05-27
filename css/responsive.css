@@ -1,0 +1,169 @@
+/*
+Template Name: purrkatty
+File Name: responsive.css
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/
+*/
+@media (max-width: 1199px){
+    .tv-girl-name h4 {
+        font-size: 12px;
+    }
+    .tv-girl-name h1 {
+        font-size: 55px !important;
+    }
+    .tv-navigation-bar {
+        top: 30%;
+        transform: translate(-50%, -30%);
+    }
+    .tv-navigation-bar a {
+        font-size: 20px;
+    }
+    .tv-block-title h2 {
+        font-size: 32px;
+    }
+    .tv-about-content > p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .tv-counter-details h2 {
+        font-size: 32px;
+    }
+    .tv-plus-icon > h4{
+        font-size: 16px;
+    }
+    .tv-plus-icon h4 i {
+        font-size: 20px;
+    }
+    .carousel-inner {
+        top: 30%;
+        transform: translateY(-30%);
+    }
+    #pricing .tv-third {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .tv-price-price {
+        font-size: 36px;
+        margin: 25px 0;
+        padding: 15px 0;
+    }
+    #blog .tv-third {
+        width: 50%;
+    }
+}
+@media (max-width: 991px){
+    .tv-main {
+        width: 100% !important;
+    }
+    .tv-display-nn{
+        display: block;
+    }
+    .tv-profile-pic > img {
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+    .tv-navigation-bar {
+        top: 15%;
+        transform: translate(-50%, -15%);
+    }
+    .tv-girl-name h1 {
+        font-size: 46px !important;
+    }
+    .tv-counter-details h2 {
+        font-size: 28px;
+    }
+}
+@media (max-width: 767px){
+    .tv-navigation-bar a {
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .tv-navigation-bar {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media (max-width: 500px){
+    .tv-girl-name h1 {
+        font-size: 38px !important;
+        margin-bottom: 10px;
+    }
+    .tv-girl-name {
+        left: 0;
+        right: 0;
+        transform: translate(0%, -50%);
+    }
+    .tv-block-title h2 {
+        font-size: 30px;
+    }
+    .tv-block-title {
+        margin-bottom: 50px;
+    }
+    .tv-block-title hr{
+        margin: 15px auto 0;
+    }
+    #about .tv-third {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    #blog .tv-third, #contact .tv-half, .tv-contact-menu .tv-col{
+        width: 100%;
+    }
+    .tv-contact-menu .form-control, .tv-contact-menu textarea.form-control{
+        width: 95%;
+    }
+    .tv-footer-address a, .tv-footer-address p {
+        font-size: 13px;
+    }
+    .tv-footer-about.text-center > p {
+        font-size: 12px;
+    }
+    .tv-logo > img {
+        width: 30%;
+    }
+}
+@media (max-width: 400px){
+    .tv-client-details > p {
+        font-size: 12px;
+        line-height: 20px;
+        margin: 20px 0;
+    }
+    .tv-contact-menu .form-control, .tv-contact-menu textarea.form-control {
+        width: 92%;
+    }
+    .tv-counter-box{
+        padding: 50px 0 20px;
+    }
+    .tv-logo > img {
+        width: 45%;
+    }
+}
+@media (max-width:600px){
+    .tv-modal-content{
+        margin:0 10px;
+        width:auto!important
+    }
+    .tv-modal{padding-top:30px}
+    .tv-dropdown-hover.tv-mobile .tv-dropdown-content,.tv-dropdown-click.tv-mobile .tv-dropdown-content{position:relative}	
+    .tv-hide-small{display:none!important}
+    .tv-mobile{display:block;width:100%!important}
+    .tv-bar-item.tv-mobile,.tv-dropdown-hover.tv-mobile,.tv-dropdown-click.tv-mobile{text-align:center}
+    .tv-dropdown-hover.tv-mobile,.tv-dropdown-hover.tv-mobile .tv-btn,.tv-dropdown-hover.tv-mobile .tv-button,.tv-dropdown-click.tv-mobile,.tv-dropdown-click.tv-mobile .tv-btn,.tv-dropdown-click.tv-mobile .tv-button{width:100%}
+}
+@media (max-width:768px){
+    .tv-modal-content{width:500px}
+    .tv-modal{padding-top:50px}
+}
+@media (min-width:993px){
+    .tv-modal-content{width:900px}
+    .tv-hide-large{display:none!important}
+    .tv-sidebar.tv-collapse{display:block!important}
+}
+@media (max-width:992px) and (min-width:601px){
+    .tv-hide-medium{display:none!important}
+}
+@media (max-width:992px){
+    .tv-sidebar.tv-collapse{display:none}
+    .tv-main{margin-left:0!important;margin-right:0!important}
+}
